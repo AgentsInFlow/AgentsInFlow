@@ -1,8 +1,8 @@
 # AgentsInFlow
 
-Desktop app to orchestrate multiple CLI coding agents across many git projects.
+Desktop app to orchestrate multiple CLI coding agents (Codex/Claude) across many git projects.
 
-**Downloads (all platforms):** https://github.com/AgentsInFlow/AgentsInFlow/releases/latest  
+**Download latest:** https://github.com/AgentsInFlow/AgentsInFlow/releases/latest  
 **All versions + changelog:** https://github.com/AgentsInFlow/AgentsInFlow/releases
 
 ## What problem it solves
@@ -13,6 +13,11 @@ Running agentic coding workflows across multiple repos gets messy fast:
 - easy to lose “what changed” between attempts
 
 AgentsInFlow gives you a single place to manage work (tickets) and run/track agents against real repos.
+
+## Editions
+
+- Free (Limited): up to 2 projects
+- Pro: not published yet
 
 ## Core workflow
 
@@ -29,10 +34,29 @@ AgentsInFlow gives you a single place to manage work (tickets) and run/track age
 - Built-in terminals per project
 - Packaged-app auto-update (release notes → download → restart)
 
+## Install
+
+Grab your OS installer from the latest release:
+- macOS: `.dmg`
+- Windows: `.exe`
+- Linux: `.AppImage` (and/or `.deb`, depending on release)
+
+## Auto-update
+
+Packaged builds periodically check for updates and let you:
+- view release notes
+- download the update
+- restart to apply
+
 ## Supported engines
 
 - OpenAI Codex CLI
 - Anthropic Claude Code CLI
+
+## Requirements (for agent runs)
+
+- Codex CLI installed + authenticated
+- Claude Code CLI installed + authenticated
 
 ## Screenshots
 
@@ -41,4 +65,3 @@ _(coming soon)_
 ## Notes
 
 This repo hosts public releases (installers + update metadata). Source code is not published here.
-
