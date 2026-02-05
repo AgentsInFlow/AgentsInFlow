@@ -1,67 +1,71 @@
 # AgentsInFlow
 
-Desktop app to orchestrate multiple CLI coding agents (Codex/Claude) across many git projects.
+A desktop application to orchestrate multiple AI coding agents (Claude Code, Codex, Cursor) across your projects with a visual Kanban board.
 
-**Download latest:** https://github.com/AgentsInFlow/AgentsInFlow/releases/latest  
-**All versions + changelog:** https://github.com/AgentsInFlow/AgentsInFlow/releases
+![Kanban View](.github/images/kanban-view.png)
 
-## What problem it solves
+## Features
 
-Running agentic coding workflows across multiple repos gets messy fast:
-- too many terminals, no shared context
-- hard to track what ran, where, and why
-- easy to lose “what changed” between attempts
+- **Multi-agent orchestration** — Run Claude Code, Codex, and Cursor from a single interface
+- **Kanban board** — Visual task management with drag-and-drop
+- **Per-project configuration** — Engine settings, MCP servers, and model selection per repo
+- **Git worktree branching** — Isolated experimentation without touching your main branch
+- **Built-in PTY terminals** — Full terminal emulation with secret redaction
+- **Token analytics** — Track input, output, cached, and reasoning tokens per execution
+- **Session recovery** — Resume interrupted executions after app restart
+- **Smart MCP session sharing** — Dynamic Chrome MCP port injection for multi-agent browser sessions
 
-AgentsInFlow gives you a single place to manage work (tickets) and run/track agents against real repos.
+![Terminal View](.github/images/terminal-view.png)
 
-## Editions
+## Prerequisites
 
-- Free (Limited): up to 2 projects
-- Pro: not published yet
+AgentsInFlow works with the following AI coding CLIs. Install at least one:
 
-## Core workflow
+| Engine | Install | Login |
+|--------|---------|-------|
+| **Claude Code** (Anthropic) | `npm install -g @anthropic-ai/claude-code` | `claude login` |
+| **Codex** (OpenAI) | `npm install -g @openai/codex` | `codex login` |
+| **Cursor** | `cursor-agent` | `cursor-agent --login` |
 
-1. Add a project (a local git repo)
-2. Create a ticket (feature/bug/task)
-3. Run an agent on the ticket/subtasks
-4. Track progress, review output, iterate
+AgentsInFlow auto-detects installed CLIs. Credentials persist across sessions.
 
-## Key features
+## Installation
 
-- Projects + tickets (Kanban + list)
-- Per-ticket execution config (engine/model/permissions)
-- Multiple concurrent runs + history
-- Built-in terminals per project
-- Packaged-app auto-update (release notes → download → restart)
+1. Download the latest release from [GitHub Releases](https://github.com/AgentsInFlow/AgentsInFlow/releases/latest)
+2. **macOS**: Open the DMG and drag AgentsInFlow to Applications
+3. **Windows**: Run the installer
+4. Launch the application
 
-## Install
+### Supported Platforms
 
-Grab your OS installer from the latest release:
-- macOS: `.dmg`
-- Windows: `.exe`
-- Linux: `.AppImage` (and/or `.deb`, depending on release)
+- macOS (Apple Silicon + Intel)
+- Windows (coming soon)
+- Linux (coming soon)
 
-## Auto-update
+## Quick Start
 
-Packaged builds periodically check for updates and let you:
-- view release notes
-- download the update
-- restart to apply
+1. **Create a Project** — Click "New Project" and select a git repository folder
+2. **Configure Engine** *(optional)* — Open project settings to set default engine, model, and MCP servers
+3. **Create a Ticket** — Click "+" on the Kanban board, add title and description
+4. **Run an Execution** — Click a ticket, select engine and model, optionally enable branching, then "Start"
 
-## Supported engines
+## Configuration
 
-- OpenAI Codex CLI
-- Anthropic Claude Code CLI
+Per-project engine settings are stored in your repository:
 
-## Requirements (for agent runs)
+| Engine | Config Path |
+|--------|-------------|
+| Claude | `.claude/settings.local.json` |
+| Codex | `.codex/config.toml` |
+| Cursor | `.cursor/settings.json` |
 
-- Codex CLI installed + authenticated
-- Claude Code CLI installed + authenticated
+## License
 
-## Screenshots
+AgentsInFlow is proprietary software offered free during beta. See [Terms of Service](https://agentsinflow.github.io/terms.html) for details.
 
-_(coming soon)_
+## Links
 
-## Notes
-
-This repo hosts public releases (installers + update metadata). Source code is not published here.
+- [Website](https://agentsinflow.github.io)
+- [Documentation](https://agentsinflow.github.io/docs/)
+- [Changelog](https://agentsinflow.github.io/changelog.html)
+- [Roadmap](https://agentsinflow.github.io/roadmap.html)
