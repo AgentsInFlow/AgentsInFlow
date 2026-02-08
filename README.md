@@ -88,7 +88,7 @@ pnpm test:run
 
 ```bash
 # macOS package build
-pnpm build:mac:limited
+pnpm build:mac
 
 # signed + notarized mac release build
 APPLE_NOTARY_PROFILE=<your-profile> pnpm build:mac:release:signed
