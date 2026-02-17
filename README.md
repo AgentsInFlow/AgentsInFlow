@@ -68,11 +68,16 @@ Per-project engine settings are stored in your repository:
 
 ## License
 
-AgentsInFlow is proprietary software offered free during beta. See [Terms of Service](https://agentsinflow.github.io/terms.html) for details.
+AgentsInFlow is proprietary software offered free during beta. See [Terms of Service](https://aif.inovisum.com/terms.html) for details.
 
 ## Links
 
-- [Website](https://agentsinflow.github.io)
-- [Documentation](https://agentsinflow.github.io/docs/)
-- [Changelog](https://agentsinflow.github.io/changelog.html)
-- [Roadmap](https://agentsinflow.github.io/roadmap.html)
+- [Website](https://aif.inovisum.com)
+- [Documentation](https://aif.inovisum.com/docs/)
+- [Changelog](https://aif.inovisum.com/changelog.html)
+- [Roadmap](https://aif.inovisum.com/roadmap.html)
+
+## Contact
+
+- [GitHub](https://github.com/hhammoud)
+- [Email](mailto:aif@inovisum.com)
