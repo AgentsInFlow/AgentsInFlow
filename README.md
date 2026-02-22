@@ -1,6 +1,6 @@
 # AgentsInFlow
 
-A desktop application to orchestrate multiple AI coding agents (Claude Code, Codex, Cursor) across your projects with a visual Kanban board.
+The desktop command center for AI coding agents. Orchestrate Claude Code, Codex, and Cursor from a single window — with context persistence, token analytics, runtime MCP injection, and isolated git worktree branching.
 
 ![Kanban View](.github/images/kanban-view.png)
 
@@ -32,7 +32,7 @@ AgentsInFlow auto-detects installed CLIs. Credentials persist across sessions.
 
 ## Installation
 
-1. Download the latest release from [GitHub Releases](https://github.com/AgentsInFlow/AgentsInFlow/releases/latest)
+1. Download the latest release from [GitHub Releases](https://github.com/hhammoud/AgentsInFlow/releases/latest)
 2. **macOS**: Open the DMG and drag AgentsInFlow to Applications
 3. Launch the application
 
